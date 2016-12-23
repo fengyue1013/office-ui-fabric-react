@@ -5,7 +5,7 @@ import {
   ComponentPage
 } from '../../components/index';
 
-import { ToggleBasicExample } from './examples/Toggle.Basic.Example';
+import { ToggleBasicExample, TestToggle } from './examples/Toggle.Basic.Example';
 import { getPageRouteFromState } from '../../utilities/pageroute';
 import { AppState } from '../../components/App/AppState';
 import { IComponentDemoPageProps } from '../../components/ComponentPage/IComponentDemoPageProps';
@@ -27,7 +27,7 @@ export class TogglePage extends React.Component<IComponentDemoPageProps, any> {
         componentName='ToggleExample'
         exampleCards={
           <ExampleCard title='Toggle' code={ ToggleBasicExampleCode }>
-            <ToggleBasicExample />
+            <TestToggle />
           </ExampleCard>
         }
         propertiesTables={
